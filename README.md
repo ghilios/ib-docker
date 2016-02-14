@@ -5,7 +5,7 @@ Use ib-controller project, https://github.com/ib-controller/ib-controller
 A sample docker-compose.yml
 ``` docker-compose
 ibgw:
-  image: zhuzhu/ib-docker
+  image: ghilios/ib-docker
   environment:
     - "VNC_PASSWORD=password"
   ports:
