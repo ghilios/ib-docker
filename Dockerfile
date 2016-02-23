@@ -8,13 +8,15 @@ RUN apt-get update -y \
     && apt-get clean
 
 WORKDIR /tmp
-RUN mkdir /root/IBController && \
+RUN mkdir /opt/IBController && \
+    mkdir /root/IBController && \
     wget https://github.com/ib-controller/ib-controller/releases/download/2.14.0/IBController-2.14.0.zip && \
 	wget http://download2.interactivebrokers.com/download/unixmacosx_latest.jar
-WORKDIR /opt
+WORKDIR /opt/IBController
 RUN unzip /tmp/IBController-2.14.0.zip && \
-    jar xf /tmp/unixmacosx_latest.jar && \
-	chmod a+x IBController/*.sh
+	chmod a+x *.sh
+WORKDIR /opt
+RUN jar xf /tmp/unixmacosx_latest.jar
 
 COPY config/IBController.ini /root/IBController/IBController.ini
 COPY config/jts.ini /opt/IBJts/jts.ini
