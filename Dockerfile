@@ -19,6 +19,7 @@ RUN unzip /tmp/IBController-2.14.0.zip && \
 COPY config/IBController.ini /root/IBController/IBController.ini
 COPY config/jts.ini /opt/IBJts/jts.ini
 COPY config/ibg.xml /opt/IBJts/dfmhgqmywm/ibg.xml
+COPY config/tws.xml /opt/IBJts/dfmhgqmywm/tws.xml
 COPY init/xvfb_init /etc/init.d/xvfb
 COPY init/vnc_init /etc/init.d/vnc
 COPY bin/xvfb-daemon-run /usr/bin/xvfb-daemon-run
