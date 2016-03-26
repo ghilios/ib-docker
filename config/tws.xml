@@ -18587,8 +18587,8 @@
 													<AdvancedFilter varName="filter">
 														<avgVolumeAbove>500000</avgVolumeAbove>
 													</AdvancedFilter>
-<MetricReqList>
-</MetricReqList>
+													<MetricReqList>
+													</MetricReqList>
 												</ScannerContent>
 												<ScannerContent version="0" watermarkWhenEmpty="false" tabIndex="-1" pageId="1456250522" transferableParameter="true" locationText="STK.NYSE,STK.AMEX,STK.ARCA,STK.NASDAQ.NMS" statsExchText="ALL" maxItems="-1" snapshot="-1" paused="false" scannerSent="true" chartDividerLocation="0">
 													<ExtendedConfigurationMap varName="extendedConfiguration"/>
@@ -18610,8 +18610,8 @@
 													<AdvancedFilter varName="filter">
 														<avgVolumeAbove>500000</avgVolumeAbove>
 													</AdvancedFilter>
-<MetricReqList>
-</MetricReqList>
+													<MetricReqList>
+													</MetricReqList>
 												</ScannerContent>
 											</ScannerContentList>
 										</SidecarScannerContent>
@@ -18853,10 +18853,11 @@
 	<MiscSettings varName="miscSettings" exportExchange="true" renameQuantityColumn="false" modelAreUsed="false" allowIBAway="false">
 		<portfolioUpdate></portfolioUpdate>
 		<ListOfLooseAccts varName="looseAccount"/>
+		<MapOfStrings varName="ddeIdMap"/>
 		<MapOfStrings varName="exchangeAccountsMap"/>
 		<MapOfStrings varName="hiddenMessageMap">
 			<Entry key="OrderInfoMessages" val=""/>
-			<Entry key="MessageIds" val="154=0,167=1|true|,237=0|true|,247=0|true|,253=0|true|,258=0|true|,360=0|true|,"/>
+			<Entry key="MessageIds" val="154=0,167=1|true|,237=0|true|,247=0|true|,253=0|true|,258=0|true|,268=0,298=0,360=0|true|,"/>
 		</MapOfStrings>
 	</MiscSettings>
 	<ArFeatures varName="arFeatures">
